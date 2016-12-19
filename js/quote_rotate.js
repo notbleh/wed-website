@@ -10,7 +10,7 @@ var quotations = [
 	},
 	
 	{
-		quote  : "Now, what is a wedding?  Well, Webster’s dictionary describes a wedding as ‘the process of removing weeds from one’s garden’.",
+		quote  : "Now, what is a wedding? <br> Well, Webster’s dictionary describes a wedding as ‘the process of removing weeds from one’s garden’.",
 		author : "Homer Simpson"
 	}
 
