@@ -7,6 +7,11 @@ var quotations = [
 	{
 		quote  : "Love can sweep you off your feet and carry you along in a way you've never known before.<br> But the ride always ends, and you end up feeling lonely and bitter.<br> Wait. It's not love I'm describing. I'm thinking of a monorail.",
 		author : "Jack Handey"
+	},
+	
+	{
+		quote  : "Now, what is a wedding?  Well, Webster’s dictionary describes a wedding as ‘the process of removing weeds from one’s garden’.",
+		author : "Homer Simpson"
 	}
 
 
