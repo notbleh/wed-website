@@ -1,17 +1,13 @@
 var quotations = [
 	{
-		quote  : "Experience is a hard teacher. First you get the test, and then you get the lesson.",
-		author : "Brian D. Krueger"
+		quote  : "I choo choo choose you.",
+		author : "Ralph Wigum"
 	},
 
 	{
-		quote  : "No one is ever prepared for life. Those who succeed are those who pass the test before they are given the lessons.",
-		author : "Unknown"
-	},
-	{
 		quote  : "Love can sweep you off your feet and carry you along in a way you've never known before.<br> But the ride always ends, and you end up feeling lonely and bitter.<br> Wait. It's not love I'm describing. I'm thinking of a monorail.",
 		author : "Jack Handey"
-	},
+	}
 
 
 ];
