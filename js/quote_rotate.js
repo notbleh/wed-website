@@ -133,5 +133,4 @@ $(document).ready(function(){
 		
 });//end document ready
 
-window.onload=quoteContainer;
-window.onload=quoteGenius;
+window.onload=quoteButton;
