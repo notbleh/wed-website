@@ -385,22 +385,9 @@ body {
 	text-align: center;
 }
 
-#quoteButton{
-	width:200px;
-	margin-top: 10px;
-	border:2px solid #46b8da;
-	color:#045;
-	font-family: inherit;
-	font-weight: bold;
-	padding:5px;
-	text-decoration: none;
-	text-align: center;
-}
 
 #quoteButton:hover{
-	cursor:pointer;
-	background:#09c;
-	color: #fff;	
+	cursor:pointer;	
 }
 
 #quoteButton:active{
