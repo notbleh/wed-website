@@ -350,11 +350,21 @@ body {
 }
 
 // Billy's Customs
-div.tagline {
+.tagline {
     color: #bfbfbf;
     padding-top: 30px;
+    font-size: 80%;
 }
 
 .top-padding {
     padding-bottom: 0px;
+}
+
+.quote-body {
+    color: rgba(white, .7);
+    line-height: 1.5;
+}
+
+.quote-by {
+    color: #cc8800;
 }
