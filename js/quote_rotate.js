@@ -133,3 +133,4 @@
 		
 });//end document ready
 
+window.onload=quote;
