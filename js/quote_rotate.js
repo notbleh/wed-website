@@ -22,8 +22,8 @@ var whichQuote = 0;
 var main = function() {
 	// Start of with an initial quote.
 	whichQuote = Math.floor( Math.random() * quotations.length );
-	$( '.quote' ).text( quotations[ whichQuote ].quote );
-	$( '.author' ).text( quotations[ whichQuote ].author );
+	$( '.quote' ).html( quotations[ whichQuote ].quote );
+	$( '.author' ).html( quotations[ whichQuote ].author );
 
 	// Generate a new quote every time the Generate Random Quote button is clicked.
 	$( '#generate-quote' ).click( function() {
@@ -34,8 +34,8 @@ var main = function() {
 		 	whichQuote = Math.floor( Math.random() * quotations.length );
 		}
 
-		$( '.quote' ).text( quotations[ whichQuote ].quote );
-		$( '.author' ).text( quotations[ whichQuote ].author );
+		$( '.quote' ).html( quotations[ whichQuote ].quote );
+		$( '.author' ).html( quotations[ whichQuote ].author );
 	});
 }
 
