@@ -37,6 +37,26 @@
 $theme-primary: #F05F40;
 $theme-dark: #222;
 
+// Billy's Customs
+.tagline {
+    color: #bfbfbf;
+    padding-top: 30px;
+    font-size: 80%;
+}
+
+.top-padding {
+    padding-bottom: 0px;
+}
+
+.quote-body {
+    color: rgba(white, .7);
+    line-height: 1.8;
+}
+
+.quote-author {
+    color: #a29061;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
