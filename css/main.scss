@@ -57,6 +57,25 @@ $theme-dark: #222;
     color: #a29061;
 }
 
+// Custom Form Validation
+label {
+    display: block;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+label.error {
+    font-weight: normal;
+    color: red;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
