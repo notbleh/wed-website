@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#form").validate({
+    $("#rsvpform").validate({
         rules: {
             "name": {
                 required: true,
@@ -19,7 +19,7 @@ $(document).ready(function () {
                 email: "Email is invalid"
             }
         },
-        submitHandler: function (form) { // for demo
+        submitHandler: function (rsvpform) { // for demo
             alert('valid form submitted'); // for demo
             return false; // for demo
         }
