@@ -33,12 +33,12 @@
                             <input type="text" name="staying_at" id="staying_at" placeholder="where you're staying">. 
                         <br>
                         For food, I would like the delicious 
-                            <select name="food" onchange="if (this.options[this.selectedIndex].value =='other'){document.myform['rsvp'].style.visibility='visible'}else {document.myform['rsvp'].style.visibility='hidden'};"> 
+                            <select name="food" onchange="if (this.options[this.selectedIndex].value =='other'){document.myform['diet'].style.visibility='visible'}else {document.myform['diet'].style.visibility='hidden'};"> 
                                 <option value="meat" selected>meats</option> 
                                 <option value="veg">vegetarian</option> 
                                 <option value="other">other options</option>
-                            </select> 
-                            (<input type="text" name="diet" id="diet" placeholder="your requirements" style="visibility:hidden;">).
+                                (<input type="text" name="diet" id="diet" placeholder="your requirements" style="visibility:hidden;">).
+                            </select>
                         <br>
                         You’ll find me on the dance floor when they play 
                             <input type="text" name="songs" id="songs" placeholder="song name">.
