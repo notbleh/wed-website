@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#form").validate({
+    $("#rsvp").validate({
         rules: {
             "name": {
                 required: true,
