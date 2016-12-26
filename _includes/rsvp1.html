@@ -7,7 +7,7 @@
                 <p>Leave a message. Okay. Thanks.</p>
                 <div class="text-center">
                     <!-- form action="https://www.formingo.co/submit/27f31d48-c28a-4b27-9309-5ca7df47b37a" method="POST" -->
-                    <form action="#" method="POST">
+                    <form action="#" method="POST" name="rsvp" id="rsvp">
                         <p>1. Dummy <br>
                         I, 
                             <input type="text" name="name" id="name" placeholder="your name here"> 
@@ -33,7 +33,7 @@
                             <input type="text" name="staying_at" id="staying_at" placeholder="where you're staying">. 
                         <br>
                         For food, I would like the delicious 
-                            <select name="food" onchange="if (this.options[this.selectedIndex].value =='other'){document.myform['diet'].style.visibility='visible'}else {document.myform['diet'].style.visibility='hidden'};"> 
+                            <select name="food" onchange="if (this.options[this.selectedIndex].value =='other'){document.myform['rsvp'].style.visibility='visible'}else {document.myform['rsvp'].style.visibility='hidden'};"> 
                                 <option value="meat" selected>meats</option> 
                                 <option value="veg">vegetarian</option> 
                                 <option value="other">other options</option>
