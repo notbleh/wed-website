@@ -18,6 +18,11 @@
     color: #a29061;
 }
 
+.rsvp-form {
+    color: rgba(white, .7);
+    line-height: 1.8;
+}
+
 // Custom Form Validation
 label {
     display: block;
@@ -31,7 +36,6 @@ label.error {
     font-weight: normal;
     color: red;
 }
-
 button {
     display: block;
     margin-top: 20px;
