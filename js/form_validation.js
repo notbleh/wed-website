@@ -3,7 +3,6 @@ $(document).ready(function () {
         rules: {
             "name": {
                 required: true,
-                minlength: 5
             },
             "email": {
                 required: true,
@@ -12,10 +11,10 @@ $(document).ready(function () {
         },
         messages: {
             "name": {
-                required: "Please, enter a name"
+                required: "Please enter a name"
             },
             "email": {
-                required: "Please, enter an email",
+                required: "Please enter an email",
                 email: "Email is invalid"
             }
         },
