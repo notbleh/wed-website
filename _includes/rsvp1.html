@@ -5,55 +5,68 @@
                 <h2 class="section-heading">RSVP</h2>
                 <hr class="primary">
                 <p>Leave a message. Okay. Thanks.</p>
-                <div class="text-center">
+                <div class="col-lg-3 col-md-6 text-center">
                     <!-- form action="https://www.formingo.co/submit/27f31d48-c28a-4b27-9309-5ca7df47b37a" method="POST" -->
                     <form action="#" method="POST" name="rsvpform" class="rsvp-form">
                         <div>
                             1.1 Dummy <br>
-                            I, 
+                            I,
+                            <span>
                                 <input type="text" name="name" id="name" placeholder="your name here"> 
-                                <select name="attending"> 
-                                    <option value="yes" selected>am attending</option> 
-                                    <option value="no">am not attending</option>
-                                </select> 
+                                    <select name="attending"> 
+                                        <option value="yes" selected>am attending</option> 
+                                        <option value="no">am not attending</option>
+                                    </select> 
+                            </span>
                             the party.
-                            <br>
                         </div>
+                        <!-- hide if not attending -->
                         <div>
-                            My invitation mentioned I could bring 
-                                <select name="guests">
-                                    <option value="0" selected>my awesome self</option>
-                                    <option value="1">a date</option>
-                                    <option value="2+">my family</option>
-                                </select>. 
+                            <div>
+                                My invitation mentioned I could bring
+                                <span>
+                                    <select name="guests">
+                                        <option value="0" selected>my awesome self</option>
+                                        <option value="1">a date</option>
+                                        <option value="2">my family</option>
+                                    </select>
+                                </span>.
+                            <!-- to insert guest names form -->
+                            </div>
+                            <div>
+                                I will be attending for 
+                                <span>
+                                    <input type="checkbox" name="ceremony" value="on"> the ceremony,
+                                    <input type="checkbox" name="reception" value="on"> the reception, 
+                                    <input type="checkbox" name="brunch" value="on"> brunch. 
+                               </span>
+                            </div>
+                            <div>
+                                I'll be hanging my hat at
+                                <span>
+                                    <input type="text" name="staying_at" id="staying_at" placeholder="where you're staying">. 
+                                </span>
+                            </div>
+                            <div>
+                                For food, I would like the delicious
+                                <span>
+                                    <select name="food"> 
+                                        <option value="meat" selected>meats</option> 
+                                        <option value="veg">vegetarian</option> 
+                                        <option value="other">other options</option> 
+                                        (<input type="text" name="diet" id="diet" placeholder="your requirements">).
+                                    </select>
+                                </span>
+                            </div>
+                            <div>
+                                You’ll find me on the dance floor when they play
+                                <span>
+                                    <input type="text" name="songs" id="songs" placeholder="song name">.
+                                </span>
+                            </div>
+                            <!-- finish hiding -->
+                        </div>
                             <br>
-                        </div>
-                        <div>
-                            I will be attending for 
-                                <input type="checkbox" name="ceremony" value="on"> the ceremony,
-                                <input type="checkbox" name="reception" value="on"> the reception, 
-                                <input type="checkbox" name="brunch" value="on"> brunch. 
-                            <br>
-                        </div>
-                        <div>
-                            I'll be hanging my hat at 
-                                <input type="text" name="staying_at" id="staying_at" placeholder="where you're staying">. 
-                            <br>
-                        </div>
-                        <div>
-                            For food, I would like the delicious 
-                                <select name="food"> 
-                                    <option value="meat" selected>meats</option> 
-                                    <option value="veg">vegetarian</option> 
-                                    <option value="other">other options</option>
-                                    (<input type="text" name="diet" id="diet" placeholder="your requirements">).
-                                </select>
-                            <br>
-                        </div>
-                        <div>
-                            You’ll find me on the dance floor when they play 
-                            <input type="text" name="songs" id="songs" placeholder="song name">.
-                        </div>
                         <div>
                             You can reach me at: <br>
                             <input type="text" name="email" id="email" placeholder="email"> <br>
@@ -61,10 +74,10 @@
                             <input type="text" name="address" id="address" placeholder="address"> <br>
                         </div>
                         <div id="errors">
-                       </div>
+                        </div>
                         <div>
                             <input type="hidden" name="__redirect" value="https://notbleh.github.io/live">
-                            <p> <input type="submit" value="Submit"> </p>
+                            <input type="submit" value="Submit">
                         </div>
                     </form>
                 </div>
