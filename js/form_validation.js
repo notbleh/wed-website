@@ -59,10 +59,12 @@ guestfamily.hide();
           guestsno.hide();
           guestsyes.show();
           guestdate.show();
+          guestfamily.hide();
         }
         if (select == '2'){
           guestsno.hide();
           guestsyes.show();
+          guestdate.hide();
           guestfamily.show();
         }
     });
