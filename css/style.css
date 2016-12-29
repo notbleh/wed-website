@@ -33,7 +33,7 @@ input.error {
     border: 1px solid red;
 }
 
-label.error {
+label.error,div.error {
     font-weight: normal;
     color: red;
 }
