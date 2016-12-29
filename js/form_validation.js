@@ -46,38 +46,51 @@ var guestdate = $('#guestdate');
 guestdate.hide();
 var guestfamily = $('#guestfamily');
 guestfamily.hide();
+    
+var allergiesyes = $('#allergiesyes');
+allergiesyes.hide();
 
     $('#guests').change(function(){ 
         select   = $('#guests').val();
         if (select == '0'){
-          guestsno.show();
-          guestsyes.hide();
-          guestdate.hide();
-          guestfamily.hide();
+            guestsno.show();
+            guestsyes.hide();
+            guestdate.hide();
+            guestfamily.hide();
         }
         if (select == '1'){
-          guestsno.hide();
-          guestsyes.show();
-          guestdate.show();
-          guestfamily.hide();
+            guestsno.hide();
+            guestsyes.show();
+            guestdate.show();
+            guestfamily.hide();
         }
         if (select == '2'){
-          guestsno.hide();
-          guestsyes.show();
-          guestdate.hide();
-          guestfamily.show();
+            guestsno.hide();
+            guestsyes.show();
+            guestdate.hide();
+            guestfamily.show();
         }
     });
     
     $('#attending').change(function(){ 
         select   = $('#attending').val();
         if (select == 'yes'){
-          attendingyes.show();
-          attendingno.hide();
+            attendingyes.show();
+            attendingno.hide();
         }
         if (select == 'no'){
-          attendingyes.hide();
-          attendingno.show();
+            attendingyes.hide();
+            attendingno.show();
+        }
+    });
+    
+    $('#allergies').change(function(){ 
+        select   = $('#allergies').val();
+        if (select == 'no'){
+            allergiesyes.hide();
+        }
+        if (select == 'yes'){
+            allergiesyes.show();
         }
     });
 });
