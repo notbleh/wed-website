@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 $(document).ready(function(){
 var attendingonly = $('#attendingonly');
-attendingonly.hide();
+attendingonly.show();
 
     $('#attending').change(function(){ 
         select   = $('#attending').val();
