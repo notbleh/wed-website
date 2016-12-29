@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $("#rsvpform").validate({
+        //by default the error elements is a <label>
+        errorElement: "div",
         //place all errors in a <div id="errors"> element
         errorPlacement: function(error, element) {
             error.appendTo("div#errors");
