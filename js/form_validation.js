@@ -37,7 +37,36 @@ var attendingyes = $('#attendingyes');
 attendingyes.show();
 var attendingno = $('#attendingno');
 attendingno.hide();
+    
+var guestsno = $('#guestsno');
+guestsno.show();
+var guestsyes = $('#guestsyes');
+guestsyes.hide();
+var guestdate = $('#guestdate');
+guestdate.hide();
+var guestfamily = $('#guestfamily');
+guestfamily.hide();
 
+    $('#guests').change(function(){ 
+        select   = $('#guests').val();
+        if (select == '0'){
+          guestsno.show();
+          guestsyes.hide();
+          guestdate.hide();
+          guestfamily.hide();
+        }
+        if (select == '1'){
+          guestsno.hide();
+          guestsyes.show();
+          guestdate.show();
+        }
+        if (select == '2'){
+          guestsno.hide();
+          guestsyes.show();
+          guestfamily.show();
+        }
+    });
+    
     $('#attending').change(function(){ 
         select   = $('#attending').val();
         if (select == 'yes'){
