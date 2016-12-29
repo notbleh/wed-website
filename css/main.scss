@@ -37,12 +37,6 @@
 $theme-primary: #F05F40;
 $theme-dark: #222;
 
-.tagline {
-    color: #bfbfbf;
-    padding-top: 30px;
-    font-size: 80%;
-}
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
