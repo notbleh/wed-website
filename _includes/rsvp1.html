@@ -9,7 +9,7 @@
                     <!-- form action="https://www.formingo.co/submit/27f31d48-c28a-4b27-9309-5ca7df47b37a" method="POST" -->
                     <form action="#" method="POST" name="rsvpform" id="rsvpform" class="rsvp-form">
                         <div class="form-group">
-                            <p>1.13.5 Dummy - allergy textarea</p>
+                            <p>1.13.6 Dummy - guest names added</p>
                             I, <span>
                                 <input type="text" name="name" id="name" placeholder="your name here"> 
                                     <select name="attending"> 
@@ -30,7 +30,19 @@
                                         <option value="2">my family</option>
                                     </select>
                                 </span>.
+                            </div>
                             <!-- to insert guest names form -->
+                            <div>
+                                Guest's name:
+                                <span>
+                                    <input type="text" name="guest-name" id="guest-name" placeholder="your date's name">
+                                </span>
+                            </div>
+                            <div>
+                                Guest's names:
+                                <span>
+                                    <textarea name="family-names" id="family-names" placeholder="your family's names"></textarea>
+                                </span>
                             </div>
                             <div class="form-group">
                                 I will be attending for 
@@ -66,7 +78,7 @@
                             </div>
                             <!-- hide if no allergies -->
                             <div class="form-group">
-                                <textarea type="text" name="spdiet" id="spdiet" placeholder="please describe your requirements"></textarea>
+                                <textarea name="spdiet" id="spdiet" placeholder="please describe your requirements"></textarea>
                             </div>
                             <!-- finish allergy hide -->
                             <div class="form-group">
