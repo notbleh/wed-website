@@ -9,7 +9,7 @@
                     <!-- form action="https://www.formingo.co/submit/27f31d48-c28a-4b27-9309-5ca7df47b37a" method="POST" -->
                     <form action="#" method="POST" name="rsvpform" id="rsvpform" class="rsvp-form">
                         <div class="form-group">
-                            <p>1.13.4 Dummy - No P</p>
+                            <p>1.13.4 Dummy - allergy added</p>
                             I, <span>
                                 <input type="text" name="name" id="name" placeholder="your name here"> 
                                     <select name="attending"> 
@@ -52,11 +52,23 @@
                                     <select name="food"> 
                                         <option value="meat" selected>meats</option> 
                                         <option value="veg">vegetarian</option> 
-                                        <option value="other">other options</option> 
                                     </select>
-                                    &lpar;<input type="text" name="diet" id="diet" placeholder="your requirements">&rpar;
-                                </span>.
+                                </span>
                             </div>
+                            <div class="form-group">
+                                I 
+                                <span>
+                                    <select name="allergies">
+                                        <option value="no" selected>do not</option>
+                                        <option value="yes">do</option>
+                                    </select>
+                                </span> have a special dietary requirement.
+                            </div>
+                            <!-- hide if no allergies -->
+                            <div class="form-group">
+                                <input type="text" name="spdiet" id="spdiet" placeholder="please describe your requirements">
+                            </div>
+                            <!-- finish allergy hide -->
                             <div class="form-group">
                                 You’ll find me on the dance floor when they play
                                 <span>
