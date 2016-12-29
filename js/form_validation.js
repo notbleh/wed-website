@@ -40,7 +40,7 @@ attendingyes.show();
     $('#attending').change(function(){ 
         select   = $('#attending').val();
         if (select == 'yes'){
-          attendingoyes.show();
+          attendingyes.show();
         }
         if (select == 'no'){
           attendingyes.hide();
