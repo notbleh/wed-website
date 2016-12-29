@@ -39,10 +39,10 @@ attendingonly.hide();
 
     $('#attending').change(function(){ 
         select   = $('#attending').val();
-        if (select == '1'){
+        if (select == 'yes'){
           attendingonly.show();
         }
-        if (select == '0'){
+        if (select == 'no'){
           attendingonly.hide();
         }
     });
