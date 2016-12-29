@@ -32,18 +32,21 @@ $(document).ready(function () {
 
 });
 
-
 $(document).ready(function(){
 var attendingyes = $('#attendingyes');
 attendingyes.show();
+var attendingno = $('#attendingno');
+attendingno.hide();
 
     $('#attending').change(function(){ 
         select   = $('#attending').val();
         if (select == 'yes'){
           attendingyes.show();
+          attendingno.hide();
         }
         if (select == 'no'){
           attendingyes.hide();
+          attendingno.show();
         }
     });
 });
