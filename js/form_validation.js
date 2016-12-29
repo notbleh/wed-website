@@ -34,16 +34,16 @@ $(document).ready(function () {
 
 
 $(document).ready(function(){
-var attendingonly = $('#attendingonly');
-attendingonly.show();
+var attendingyes = $('#attendingyes');
+attendingyes.show();
 
     $('#attending').change(function(){ 
         select   = $('#attending').val();
         if (select == 'yes'){
-          attendingonly.show();
+          attendingoyes.show();
         }
         if (select == 'no'){
-          attendingonly.hide();
+          attendingyes.hide();
         }
     });
 });
