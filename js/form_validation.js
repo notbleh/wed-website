@@ -31,3 +31,19 @@ $(document).ready(function () {
     });
 
 });
+
+
+$(document).ready(function(){
+var attendingonly = $('#attendingonly');
+attendingonly.hide();
+
+    $('#attending').change(function(){ 
+        select   = $('#attending').val();
+        if (select == '1'){
+          attendingonly.show();
+        }
+        if (select == '0'){
+          attendingonly.hide();
+        }
+    });
+});
