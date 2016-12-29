@@ -1,6 +1,10 @@
-// Billy's Customs
+// Billy Customs
 
-div.tagline {
+.rsvp-form {
+    line-height: 1.8;
+}
+
+.tagline {
     color: #bfbfbf;
     padding-top: 30px;
     font-size: 80%;
@@ -19,9 +23,6 @@ div.tagline {
     color: #a29061;
 }
 
-.rsvp-form {
-    line-height: 1.8;
-}
 
 // Custom Form Validation
 label {
