@@ -10,7 +10,7 @@
                         <div class="form-group">
                             <p>1.14.9 Dummy - attending yes/no alts</p>
                             I, <span>
-                                <input type="text" name="name" id="name" placeholder="your name here"> 
+                                <input type="text" name="name" id="name" placeholder="your name here">
                                 <select id="attending" name="attending"> 
                                     <option value="yes" selected="">am attending</option> 
                                     <option value="no">am not attending</option>
@@ -27,27 +27,23 @@
                         <!-- hide if not attending -->
                         <div id="attendingyes">
                             <div class="form-group">
-                                My invitation mentioned I could bring
+                              My invitation mentioned I could bring
                                 <span>
-                                    <select name="guests">
+                                    <select id="guests" name="guests">
                                         <option value="0" selected>my awesome self</option>
                                         <option value="1">a date</option>
                                         <option value="2">my family</option>
                                     </select>
-                                </span>.
+                                </span><span id="guestsno">.</span> <span id="guestsyes">, so I'll be bringing:</span>
                             </div>
-                            <!-- to insert guest names form -->
-                            <div>
-                                Guest's name:
-                                <span>
-                                    <input type="text" name="guest-name" id="guest-name" placeholder="your date's name">
-                                </span>
+                            <div class="form-group" id="guestdate">
+                                <input type="text" name="gname1" id="gname1" placeholder="Guest #1">
                             </div>
-                            <div>
-                                Guest's names:
-                                <span>
-                                    <textarea name="family-names" id="family-names" placeholder="your family's names"></textarea>
-                                </span>
+                            <div class="form-group" id="guestfamily">
+                                <input type="text" name="gname1" id="gname1" placeholder="Guest #1"><br>
+                                <input type="text" name="gname2" id="gname2" placeholder="Guest #2"><br>
+                                <input type="text" name="gname3" id="gname3" placeholder="Guest #3"><br>
+                                <input type="text" name="gname4" id="gname4" placeholder="Guest #4"><br>
                             </div>
                             <div class="form-group">
                                 I will be attending for 
