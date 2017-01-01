@@ -1,3 +1,14 @@
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+
+.no-margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .rsvp-form {
     line-height: 1.4;
     font-size: 16px;
