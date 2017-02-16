@@ -7,7 +7,7 @@ $(document).ready(function () {
             error.appendTo("div#errors");
         }, 
         rules: {
-            "1name": {
+            "name": {
                 required: true,
             },
             "email": {
@@ -16,7 +16,7 @@ $(document).ready(function () {
             }
         },
         messages: {
-            "1name": {
+            "name": {
                 required: "Please enter a name"
             },
             "email": {
