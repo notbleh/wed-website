@@ -2,36 +2,34 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <h2 class="section-heading">Save The Date!</h2>
                 <hr class="primary">
-                <p>Leave a message. Okay. Thanks. What?</p>
+                <p>Leave a message. Okay. Thanks!</p>
             </div>
-            <!-- <div class="col-lg-2 col-lg-offset-1 text-center">
-                 <a href="https://twitter.com/{{ site.twitter_username }}">
-                 <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                 <p>{{ site.twitter_username }}</p>
-                 </a>
-            </div> -->
-            <div class="col-lg-2 col-lg-offset-5 text-center">
+            <div class="text-center">
                 <a href="mailto:{{ site.email }}">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p>{{ site.email }}</p>
                 </a>
             </div>
-            <!-- <div class="col-lg-2 col-lg-offset-1 text-center">
-                <a href="https://github.com/{{ site.github_username }}">
-                <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p>{{ site.github_username }}</p>
-                </a>
-            </div> -->
         </div>
         <div class="text-center">
-            <form id="rsvpform" method="post" action="#">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <button type="submit">Submit</button>
+            <form action="https://getsimpleform.com/messages?form_api_token=dcfd9fb6c027d40baca15c632b8205b9" method="POST" name="stdform" id="stdform" class="rsvp-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="name"><br>
+                    <input type="text" name="email" id="email" placeholder="email"><br>
+                    <input type="text" name="phone_no" id="phone_no" placeholder="phone number"><br>
+                    <input type="text" name="address" id="address" placeholder="address">
+                </div>
+                <div id="std-message">
+                    <textarea name="message" id="message" placeholder="write a message if you wish" cols="30" rows="4"></textarea>
+                </div>
+                <div class="form-group" id="errors">
+                </div>
+                <div>
+                    <input type="hidden" name="__redirect" value="https://notbleh.github.io/live">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
         <div class="tagline">
