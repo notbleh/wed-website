@@ -7,7 +7,7 @@ input[type=text] {
 .wedding-party-box {
     position: relative;
     display: block;
-    max-width: 650px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
