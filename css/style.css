@@ -16,6 +16,13 @@ input[type=text] {
     color: #777;
 }
 
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
 .no-margin {
   margin-top: 0;
   margin-bottom: 0;
