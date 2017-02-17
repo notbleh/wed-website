@@ -11,6 +11,10 @@ input[type=text] {
     margin: 0 auto;
 }
 
+.wedding-party-box p {
+    margin-bottom: 0;
+}
+
 .no-margin {
   margin-top: 0;
   margin-bottom: 0;
