@@ -1,3 +1,7 @@
+.header-content h1 {
+    letter-spacing: 12px;
+}
+
 input[type=text] {
     border: none;
     border-bottom: 1px solid black;
