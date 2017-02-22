@@ -1,5 +1,6 @@
 $(document).ready(function(){
 $('.responsive').slick({
+  arrows: false,
   dots: true,
   infinite: true,
   speed: 300,
