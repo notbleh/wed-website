@@ -2,6 +2,10 @@
     letter-spacing: 10px;
 }
 
+.header-content h2 {
+    letter-spacing: 10px;
+}
+
 input[type=text] {
     border: none;
     border-bottom: 1px solid black;
