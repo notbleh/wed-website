@@ -35,7 +35,7 @@
         }
     );
     $("h2").fitText(
-        1.8, {
+        2.4, {
             minFontSize: '18px',
             maxFontSize: '24px'
         }
