@@ -1,3 +1,7 @@
+.header std {
+    background-image: url(../img/std-header.jpg);
+}
+
 .header-content h1 {
     letter-spacing: 10px;
 }
