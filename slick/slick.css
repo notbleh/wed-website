@@ -1,8 +1,4 @@
 /* Slider */
-.slick-list {
-    outline: none;
-}
-
 .slick-slider
 {
     position: relative;
@@ -25,6 +21,7 @@
 .slick-list
 {
     position: relative;
+    outline: none;
 
     display: block;
     overflow: hidden;
