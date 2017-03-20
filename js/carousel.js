@@ -41,7 +41,7 @@ $('.responsive-4').slick({
   dots: true,
   infinite: true,
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   touchThreshold: 20,
   responsive: [
