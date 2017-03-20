@@ -8,8 +8,7 @@ url: "http://www.threathawk.com/" # the base hostname & protocol for your site
 # User settings
 twitter_username:
 github_username:
-address: 17 Quat Quatta Ave 
-  - line: Ripponlea VIC 3185
+address: 17 Quat Quatta Ave, Ripponlea VIC 3185
 
 # Build settings
 markdown: kramdown
