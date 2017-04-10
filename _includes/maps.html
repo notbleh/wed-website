@@ -11,14 +11,19 @@
           streetViewControl: false,
           fullscreenControl: false
         });
+          var pinmarker = {
+            path: 'M20,2C11.7,2,5,8.4,5,16.4C5,30.1,20,48,20,48s15-17.9,15-31.6C35,8.4,28.3,2,20,2z',
+            fillColor: 'black',
+            scale: 1,
+          };
         var marker = new google.maps.Marker({
           position: sjoc,
-          icon: '/img/marker.png',
+          icon: pinmarker,
           map: map
         });
         var marker = new google.maps.Marker({
           position: quat,
-          icon: '/img/marker.png', 
+          icon: pinmarker, 
           map: map
         });
       }
