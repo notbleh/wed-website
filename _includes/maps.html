@@ -2,13 +2,13 @@
     <div id="map"></div>
     <script>
       function initMap() {
-        var 'quat quatta' = {lat: -37.877, lng: 144.996};
+        var quat = {lat: -37.877, lng: 144.996};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: 'quat quatta'
+          zoom: 10,
+          center: quat
         });
         var marker = new google.maps.Marker({
-          position: 'quat quatta',
+          position: quat,
           map: map
         });
       }
