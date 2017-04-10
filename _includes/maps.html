@@ -7,7 +7,10 @@
         var sjoc = {lat: -37.8103587, lng: 144.9522232};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: cent
+          center: cent,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false
         });
         var marker = new google.maps.Marker({
           position: sjoc,
