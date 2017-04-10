@@ -1,4 +1,4 @@
 var config = {
-  FORM_EMAIL : '123456',
-  GOOGLE_API : '56789',
+  FORM_EMAIL : 'rsvp@billyandjessica.com',
+  GOOGLE_API : 'AIzaSyAvYxeS7S1zvBZxFpRwwili5aF-xz8HPG4',
 }
