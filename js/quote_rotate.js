@@ -17,9 +17,6 @@ var quotations = [
 
 ];
 
-var formemail = config.FORM_EMAIL;
-var googleapi = config.GOOGLE_API;
-
 var lastQuote = 0;
 var whichQuote = 0;
 
