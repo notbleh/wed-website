@@ -2,10 +2,16 @@
     <div id="map"></div>
     <script>
       function initMap() {
+        var cent = {lat: -37.84771, lng: 144.97471};
         var quat = {lat: -37.8771005, lng: 144.9963394};
+        var sjoc = {lat: -37.8103587, lng: 144.9522232};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
-          center: quat
+          center: cent
+        });
+        var marker = new google.maps.Marker({
+          position: sjoc,
+          map: map
         });
         var marker = new google.maps.Marker({
           position: quat,
