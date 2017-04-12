@@ -1,57 +1,57 @@
     <div id="map"></div>
     <script>
-	var infowindow = new google.maps.InfoWindow();
-	    
-   	function initMap() {
-	    	var myOptions = {
-		zoom: 12,
-		center: new google.maps.LatLng(-37.84771, 144.97471),
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		mapTypeControl: false,
-		streetViewControl: false,
-		fullscreenControl: false
-	    }
+function initMap() {
+			var infowindow = new google.maps.InfoWindow();
+      
+      var pinmarker = {
+          path: 'M20,2C11.7,2,5,8.4,5,16.4C5,30.1,20,48,20,48s15-17.9,15-31.6C35,8.4,28.3,2,20,2z',
+          fillColor: 'black',
+          fillOpacity: 1,
+          scale: 1,
+          labelOrigin: new google.maps.Point(19.5, 17),
+        };
+      
+	    var myOptions = {
+        zoom: 12,
+        center: new google.maps.LatLng(-37.84771, 144.97471),
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false
+      	};
 
-	    map = new google.maps.Map(document.getElementById("map"),
-	    myOptions);
+       var map = new google.maps.Map(document.getElementById("map"),
+                                  myOptions);
 
-	    google.maps.event.addListener(map, 'click', function () {
-		infowindow.close();
-	    });
+        google.maps.event.addListener(map, 'click', function () {
+	infowindow.close();
+        });
 
-	    var point;
+      var point;
 
-	    point = new google.maps.LatLng(-37.8103587, 144.9522232);
-	    createMarker(point, '1', 'The Ceremony');
+      point = new google.maps.LatLng(-37.8103587, 144.9522232);
+      createMarker(point, '1', 'The Ceremony');
 
-	    point = new google.maps.LatLng(-37.8771005, 144.9963394);
-	    createMarker(point, '2', 'The Reception');
-	}
+      point = new google.maps.LatLng(-37.8771005, 144.9963394);
+      createMarker(point, '2', 'The Reception');
 
-	  var pinmarker = {
-	    path: 'M20,2C11.7,2,5,8.4,5,16.4C5,30.1,20,48,20,48s15-17.9,15-31.6C35,8.4,28.3,2,20,2z',
-	    fillColor: 'black',
-	    fillOpacity: 1,
-	    scale: 1,
-	    labelOrigin: new google.maps.Point(19.5, 17),
-	  };
+      function createMarker(latlng, pinlabel, html) {
 
-	function createMarker(latlng, pinlabel, html) {
+          var marker = new google.maps.Marker({
+              position: latlng,
+              map: map,
+              icon: pinmarker,
+              label: { 
+                text: pinlabel,
+                color: 'white',
+              }
+          });
 
-	    var marker = new google.maps.Marker({
-		position: latlng,
-		map: map,
-		icon: pinmarker,
-		label: { 
-		  text: pinlabel,
-		  color: 'white',
-		}
-	    });
+          google.maps.event.addListener(marker, 'click', function () {
 
-	    google.maps.event.addListener(marker, 'click', function () {
-
-		infowindow.setContent(html);
-		infowindow.open(map, marker);
-	    });
-	}
+              infowindow.setContent(html);
+              infowindow.open(map, marker);
+          });
+      }
+}
     </script>
