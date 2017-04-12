@@ -1,50 +1,36 @@
     <div id="map"></div>
     <script>
-        function initMap() {
-          var cent = {lat: -37.84771, lng: 144.97471};
-          var quat = {lat: -37.8771005, lng: 144.9963394};
-          var sjoc = {lat: -37.8103587, lng: 144.9522232};
-
-          var myOptions = {
-            zoom: 12,
-            center: cent,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            mapTypeControl: false,
-            streetViewControl: false,
-            fullscreenControl: false
-          };
-
-          map = new google.maps.Map(document.getElementById('map'), myOptions);
-
-          var marker = new MarkerWithLabel({
-            position: quat,
-            map: map,
-            draggable: true,
-            raiseOnDrag: true,
-            labelContent: "1",
-            labelAnchor: new google.maps.Point(5, 30),
-            labelClass: "pinlabels", // the CSS class for the label
-            labelInBackground: false,
-            icon: pinSymbol('black')	
-          });
-          var marker = new MarkerWithLabel({
-            position: sjoc,
-            map: map,
-            draggable: true,
-            raiseOnDrag: true,
-            labelContent: "2",
-            labelAnchor: new google.maps.Point(5, 30),
-            labelClass: "pinlabels", // the CSS class for the label
-            labelInBackground: false,
-            icon: pinSymbol('black')	
-          });
-        }
-        function pinSymbol(color) {
-          return {
-            path: 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z',
-            fillColor: color,
-            fillOpacity: 1,
-            scale: 0.8
-          };
-        }
+      function initMap() {
+        var cent = {lat: -37.84771, lng: 144.97471};
+        var quat = {lat: -37.8771005, lng: 144.9963394};
+        var sjoc = {lat: -37.8103587, lng: 144.9522232};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: cent,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false
+        });
+          
+        var pinmarker = {
+          path: 'M20,2C11.7,2,5,8.4,5,16.4C5,30.1,20,48,20,48s15-17.9,15-31.6C35,8.4,28.3,2,20,2z',
+          fillColor: 'black',
+          fillOpacity: 1,
+          scale: 1
+        };
+          
+        var marker = new google.maps.Marker({
+          position: sjoc,
+          icon: pinmarker,
+          label: '1',
+          map: map
+        });
+          
+        var marker = new google.maps.Marker({
+          position: quat,
+          icon: pinmarker, 
+          label: '2',
+          map: map
+        });
+      }
     </script>
