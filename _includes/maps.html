@@ -22,14 +22,20 @@
         var marker = new google.maps.Marker({
           position: sjoc,
           icon: pinmarker,
-          label: '1',
+          label: { 
+              text: '1',
+              color: 'white'
+          }
           map: map
         });
           
         var marker = new google.maps.Marker({
           position: quat,
           icon: pinmarker, 
-          label: '2',
+          label: { 
+              text: '2',
+              color: 'white'
+          }
           map: map
         });
       }
