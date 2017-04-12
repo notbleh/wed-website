@@ -1,7 +1,9 @@
     <div id="map"></div>
     <script>
+	var infowindow = new google.maps.InfoWindow();
+	    
 	function initMap() {
-		    var myOptions = {
+	    	var myOptions = {
 		zoom: 12,
 		center: new google.maps.LatLng(-37.84771, 144.97471),
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
