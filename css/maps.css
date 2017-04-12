@@ -2,13 +2,3 @@
   height: 400px;
   width: 100%;
 }
-
-.pinlabels {
-    color: white;
-    background-color: black;
-    font-family:"Lucida Grande", "Arial", sans-serif;
-    font-size: 14px;
-    text-align: center;
-    width: 10px;
-    white-space: nowrap;
-}
