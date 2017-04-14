@@ -8,6 +8,7 @@
 
 .header-content h2 {
     letter-spacing: 3px;
+    text-transform: capitalize;
 }
 
 .header-content p {
