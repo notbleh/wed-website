@@ -2,6 +2,11 @@
     background-image: url(../img/std-header.jpg);
 }
 
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .header-content h1 {
     letter-spacing: 10px;
 }
