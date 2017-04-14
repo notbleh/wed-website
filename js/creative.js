@@ -42,8 +42,8 @@
     );
         $("h2").fitText(
         2.4, {
-            minFontSize: '18px',
-            maxFontSize: '24px'
+            minFontSize: '20px',
+            maxFontSize: '30px'
         }
     );
     
