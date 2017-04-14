@@ -42,7 +42,7 @@
     );
         $("h2").fitText(
         2.4, {
-            minFontSize: '20px',
+            minFontSize: '24px',
             maxFontSize: '30px'
         }
     );
