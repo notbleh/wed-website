@@ -34,7 +34,13 @@
             maxFontSize: '65px'
         }
     );
-    $("h2").fitText(
+    $(".header-content-inner h3").fitText(
+        2.4, {
+            minFontSize: '18px',
+            maxFontSize: '24px'
+        }
+    );
+        $("h2").fitText(
         2.4, {
             minFontSize: '18px',
             maxFontSize: '24px'
