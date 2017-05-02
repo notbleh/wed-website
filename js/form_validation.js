@@ -46,6 +46,11 @@ var guestdate = $('#guestdate');
 guestdate.hide();
 var guestfamily = $('#guestfamily');
 guestfamily.hide();
+var single = $('#single');
+single.show();
+var plural = $('#plural');
+plural.hide();
+    
     
 var allergiesyes = $('#allergiesyes');
 allergiesyes.hide();
@@ -57,18 +62,24 @@ allergiesyes.hide();
             guestsyes.hide();
             guestdate.hide();
             guestfamily.hide();
+            single.show();
+            plural.hide();
         }
         if (select == '1'){
             guestsno.hide();
             guestsyes.show();
             guestdate.show();
             guestfamily.hide();
+            single.hide();
+            plural.show();
         }
         if (select == '2'){
             guestsno.hide();
             guestsyes.show();
             guestdate.hide();
             guestfamily.show();
+            single.hide();
+            plural.show();
         }
     });
     
