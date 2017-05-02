@@ -46,9 +46,9 @@ var guestdate = $('#guestdate');
 guestdate.hide();
 var guestfamily = $('#guestfamily');
 guestfamily.hide();
-var single = $('#single');
+var single = $('.single');
 single.show();
-var plural = $('#plural');
+var plural = $('.plural');
 plural.hide();
     
     
