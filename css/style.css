@@ -88,6 +88,10 @@ input[type=text] {
         text-shadow: 2px 2px 8px #000;
 }
 
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+
 // Custom Form Validation
 label {
     display: block;
