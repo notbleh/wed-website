@@ -21,6 +21,7 @@ h2 {
 }
 
 input[type=text] {
+    margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid black;
     background: transparent;
