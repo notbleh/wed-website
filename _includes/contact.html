@@ -14,7 +14,7 @@
         </div>
         <div class="row text-center">
             <form action="https://www.formbackend.com/f/{{ site.formbackend_key }}" method="POST" name="stdform" id="rsvpform" class="rsvp-form">
-                <div class="col-lg-12 form-group">
+                <div class="row form-group">
                     <input type="hidden" name="formbackend_nono">
                     <input type="hidden" name="title" value="Save The Date">
                     <input type="text" name="name" id="name" placeholder="name"><br>
@@ -25,14 +25,14 @@
                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 form-group" id="std-message">
                     <textarea name="message" id="message" placeholder="write a message if you wish..." rows="4" style="width: 100%;"></textarea>
                 </div>
-                <div class="col-lg-12 form-group " id="errors"></div>
-                <div class="col-lg-12">
+                <div class="row form-group " id="errors"></div>
+                <div class="row">
                     <input type="hidden" name="redirect" value="https://notbleh.github.io/">
                     <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
-        <div class="tagline col-lg-12 text-center">
+        <div class="tagline row text-center">
             Built by the Groom over Creative by <a href="http://www.startbootstrap.com">Start Bootstrap</a>.
         </div>
     </div>
