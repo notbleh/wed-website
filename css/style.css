@@ -2,6 +2,10 @@
     background-image: url(../img/std-header.jpg);
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
+
 h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
