@@ -7,7 +7,7 @@
         </div>
         <div class="row text-center">
             <form action="https://getsimpleform.com/messages?form_api_token=dcfd9fb6c027d40baca15c632b8205b9" method="POST" name="rsvpform" id="rsvpform" class="rsvp-form">
-                <div class="row">
+                <div class="row form-group">
                     <input type="hidden" name="title" value="RSVP">
                     <p>I, 
                         <span>
@@ -20,7 +20,7 @@
                     the party.</p>
                 </div>
                 <!-- show if not attending -->
-                <div class="row">
+                <div class="row formgroup">
                     <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-md-4 col-md-offset-4" id="attendingno">
                         <p>Sorry you're not able to make it.<br>
                         That's okay, you can leave us a message anyways.</p>
@@ -28,8 +28,8 @@
                     </div>
                 </div>
                 <!-- hide if not attending -->
-                <div class="row form-group" id="attendingyes">
-                    <div class="row">
+                <div class="row" id="attendingyes">
+                    <div class="row form-group">
                         <p>My invitation mentioned I could bring
                             <span>
                                 <select id="guests" name="guests">
@@ -40,16 +40,16 @@
                             </span><span id="guestsno">.</span> <span id="guestsyes">, so I'll be bringing:</span>
                         </p>
                     </div>
-                    <div class="row" id="guestdate">
+                    <div class="row form-group" id="guestdate">
                         <input type="text" name="gnamedate" id="gnamedate" placeholder="Guest #1">
                     </div>
-                    <div class="row" id="guestfamily">
+                    <div class="row form-group" id="guestfamily">
                         <input type="text" name="gname1" id="gname1" placeholder="Guest #1"><br>
                         <input type="text" name="gname2" id="gname2" placeholder="Guest #2"><br>
                         <input type="text" name="gname3" id="gname3" placeholder="Guest #3"><br>
                         <input type="text" name="gname4" id="gname4" placeholder="Guest #4"><br>
                     </div>
-                    <div class="row">
+                    <div class="row form-group">
                         <div class="col-xs-6 text-right">
                             <p style="margin: 0;"><span class="single">I</span><span class="plural">We</span> will be attending:</p>
                         </div>
@@ -58,13 +58,13 @@
                             <label><input type="checkbox" name="reception" value="1">the reception</label>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row form-group">
                         <span class="single">I</span><span class="plural">We</span>'ll be hanging my hat at
                         <span>
                             <input type="text" name="staying_at" id="staying_at" placeholder="where you're staying"> 
                         </span>.
                     </div>
-                    <div class="row">
+                    <div class="row form-group">
                         <p><span class="single">I</span><span class="plural">We</span> 
                             <span>
                                 <select id="allergies" name="allergies">
@@ -75,13 +75,13 @@
                         </p>
                     </div>
                     <!-- hide if no allergies -->
-                    <div class="row">
+                    <div class="row form-group">
                         <div id="allergiesyes"class="form-group col-xs-6 col-xs-offset-3 col-sm-6 col-md-4 col-md-offset-4">
                             <textarea name="specrec" id="specreq" placeholder="please describe your requirements" style="width: 100%" row="4"></textarea>
                         </div>
                     </div>
                     <!-- finish allergy hide -->
-                    <div class="row">
+                    <div class="row form-group">
                         <p>You’ll find <span class="single">me</span><span class="plural">us</span> on the dance floor when they play
                             <span>
                                 <input type="text" name="songs" id="songs" placeholder="song name">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <!-- finish hiding -->
-                <div class="row">
+                <div class="row form-group">
                     <p>
                         You can reach me at: <br>
                         <input type="text" name="email" id="email" placeholder="email"><br>
@@ -98,7 +98,7 @@
                         <input type="text" name="address" id="address" placeholder="address">
                     </p>
                 </div>
-                <div class="row" id="errors">
+                <div class="row form-group" id="errors">
                 </div>
                 <div>
                     <input type="hidden" name="redirect_to" value="https://billyandjessica.com">
