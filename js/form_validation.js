@@ -35,7 +35,7 @@ $(document).ready(function () {
 $(document).ready(function(){
 var attendingyes = $('#attendingyes');
 attendingyes.show();
-var attendingno = $('#attendingno');
+var attendingno = $('div.attendingno');
 attendingno.hide();
     
 var guestsno = $('#guestsno');
