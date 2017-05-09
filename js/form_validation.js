@@ -52,8 +52,12 @@ var plural = $('span.plural');
 plural.hide();
     
     
-var allergiesyes = $('#allergiesyes');
-allergiesyes.hide();
+var specreq = $('div.specreq');
+specreq.hide();
+var specno = $('span.specno');
+specno.show();
+var specyes = $('span.specyes');
+specyes.hide();
 
     $('#guests').change(function(){ 
         select   = $('#guests').val();
@@ -95,13 +99,17 @@ allergiesyes.hide();
         }
     });
     
-    $('#allergies').change(function(){ 
-        select   = $('#allergies').val();
+    $('#specreq').change(function(){ 
+        select   = $('#specreq').val();
         if (select == 'no'){
-            allergiesyes.hide();
+            specreq.hide();
+            specno.show();
+            specyes.hide();
         }
         if (select == 'yes'){
-            allergiesyes.show();
+            specreq.show();
+            specno.hide();
+            specyes.show();
         }
     });
 });
