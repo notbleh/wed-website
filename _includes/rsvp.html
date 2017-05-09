@@ -70,17 +70,17 @@
                     <div class="row form-group">
                         <p><span class="single">I</span><span class="plural">We</span> 
                             <span>
-                                <select id="allergies" name="allergies">
+                                <select id="specreq" name="specreq">
                                     <option value="no" selected>do not</option>
                                     <option value="yes">do</option>
                                 </select>
-                            </span> have any special dietary requirement.
+                            </span> have <span class="specno">any</span><span class="specyes">a</span>special request(s).
                         </p>
                     </div>
                     <!-- hide if no allergies -->
-                    <div class="row form-group" id="allergiesyes">
+                    <div class="row form-group specreq">
                         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-                            <textarea name="specrec" id="specreq" placeholder="please describe your requirements" rows="3" style="width: 100%;"></textarea>
+                            <textarea name="spec-req-details" id="spec-req-details" placeholder="please describe your requirements" rows="3" style="width: 100%;"></textarea>
                         </div>
                     </div>
                     <!-- finish allergy hide -->
