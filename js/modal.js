@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  if(window.location.href.indexOf('#myModal') != -1) {
-    $('#myModal').modal('show');
+  if(window.location.href.indexOf('#thankyou') != -1) {
+    $('#thankyou').modal('show');
   }
 
 });
