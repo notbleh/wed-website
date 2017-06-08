@@ -1,5 +1,6 @@
 $(document).ready(function(){
 $('.responsive-3').slick({
+  centerMode: true,
   arrows: false,
   dots: true,
   infinite: true,
