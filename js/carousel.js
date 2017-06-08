@@ -1,6 +1,5 @@
 $(document).ready(function(){
 $('.responsive-3').slick({
-  centerMode: true,
   arrows: false,
   dots: true,
   infinite: true,
@@ -12,7 +11,6 @@ $('.responsive-3').slick({
     {
       breakpoint: 1024,
       settings: {
-        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
@@ -22,7 +20,6 @@ $('.responsive-3').slick({
     {
       breakpoint: 900,
       settings: {
-        centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 1
       }
@@ -30,7 +27,6 @@ $('.responsive-3').slick({
     {
       breakpoint: 480,
       settings: {
-        centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -78,30 +74,6 @@ $('.responsive-4').slick({
       }
     }
   ]
-});
-
-function setSlideVisibility() {
-  //Find the visible slides i.e. where aria-hidden="false"
-  var visibleSlides = $('.slick-slide[aria-hidden="false"]');
-  //Make sure all of the visible slides have an opacity of 1
-  $(visibleSlides).each(function() {
-    $(this).css('opacity', 1);
-  });
-  //Set the opacity of the first and last partial slides.
-  $(visibleSlides).first().prev().css('opacity', 0);
-  $(visibleSlides).last().next().css('opacity', 0);
-}
-
-$(setSlideVisibility());
-
-$('.slider').on('beforeChange', function() {
-  $('.slick-slide').each(function() {
-  	$(this).css('opacity', 1);
-  });
-});
-
-$('.slider').on('afterChange', function() {
-  setSlideVisibility();
 });
 
 });
