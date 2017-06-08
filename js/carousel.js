@@ -1,5 +1,6 @@
 $(document).ready(function(){
 $('.responsive-3').slick({
+  centerMode: true,
   arrows: false,
   dots: true,
   infinite: true,
@@ -11,6 +12,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 1024,
       settings: {
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
@@ -20,6 +22,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 900,
       settings: {
+        centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 1
       }
@@ -27,6 +30,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 480,
       settings: {
+        centerMode: true,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -75,8 +79,6 @@ $('.responsive-4').slick({
     }
   ]
 });
-});
-
 
 function setSlideVisibility() {
   //Find the visible slides i.e. where aria-hidden="false"
@@ -100,4 +102,6 @@ $('.slider').on('beforeChange', function() {
 
 $('.slider').on('afterChange', function() {
   setSlideVisibility();
+});
+
 });
