@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $('.responsive-3').slick({
-  centermode: true,
+  centerMode: true,
   centerPadding: '0px',
   arrows: false,
   dots: true,
@@ -13,7 +13,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 1024,
       settings: {
-        centermode: true,
+        centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -24,7 +24,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 900,
       settings: {
-        centermode: true,
+        centerMode: true,
         centerPadding: '0px',
         slidesToShow: 2,
         slidesToScroll: 1
@@ -33,7 +33,7 @@ $('.responsive-3').slick({
     {
       breakpoint: 480,
       settings: {  
-        centermode: true,
+        centerMode: true,
         centerPadding: '0px',
         slidesToShow: 1,
         slidesToScroll: 1
