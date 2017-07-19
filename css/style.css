@@ -2,6 +2,10 @@
     background-image: url(../img/std-header.jpg);
 }
 
+.dlb-space {
+    line-height: 2;
+}
+
 .mb-5 p {
     margin-bottom: 5px;
 }
