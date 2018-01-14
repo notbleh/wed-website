@@ -1,3 +1,6 @@
+#bg-primary a:link {color: #333;}
+#bg-primary a:hover {color: #111;}
+
 .std {
     background-image: url(../img/std-header.jpg);
 }
