@@ -52,7 +52,7 @@ p {
         > a:focus {
             color: $theme-dark;
             &:hover {
-                color: darken($theme-primary, 50%);
+                color: darken($theme-primary, 30%);
             }
         }
     }
