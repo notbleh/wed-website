@@ -1,3 +1,6 @@
+div#gold-box a:link {color: #333;}
+div#gold-box a:hover {color: #111;}
+
 .std {
     background-image: url(../img/std-header.jpg);
 }
