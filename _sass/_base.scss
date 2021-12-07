@@ -175,6 +175,8 @@ header {
     text-align: center;
     color: white;
     .header-content {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
