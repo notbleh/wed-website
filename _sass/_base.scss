@@ -170,13 +170,9 @@ header {
     @include background-cover;
     background-position: center;
     background-image: url('../img/hawaii_header.jpg');
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
     text-align: center;
     color: white;
     .header-content {
-        filter: blur(0px);
-        -webkit-filter: blur(0px);
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
