@@ -170,13 +170,16 @@ header {
     text-align: center;
     color: white;
     .header-image {
-            width: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            @include background-cover;
-            background-position: center;
-            background-image: url('../img/hawaii_header.jpg');
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include background-cover;
+        background-image: url('../img/hawaii_header.jpg');
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
     }
     .header-content {
         position: relative;
