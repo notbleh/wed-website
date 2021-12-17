@@ -177,8 +177,8 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('../img/wedding_header.jpg');
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
         @include background-cover;
     }
     .header-content {
