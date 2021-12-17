@@ -176,9 +176,9 @@ header {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url('../img/wedding_header.jpg');
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
+        background-image: url('../img/wedding_header_blurred.jpg');
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
         @include background-cover;
     }
     .header-content {
